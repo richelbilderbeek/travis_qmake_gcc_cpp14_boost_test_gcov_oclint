@@ -14,11 +14,11 @@ SOURCES += my_functions.cpp \
     main_test.cpp \
     my_functions_test.cpp
 
-# C++11
+# C++14
 QMAKE_CXX = g++-5
 QMAKE_LINK = g++-5
 QMAKE_CC = gcc-5
-QMAKE_CXXFLAGS += -std=c++11
+QMAKE_CXXFLAGS += -std=c++14
 
 # Boost.Test
 LIBS += -lboost_unit_test_framework

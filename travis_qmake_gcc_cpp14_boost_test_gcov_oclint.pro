@@ -7,6 +7,7 @@ CONFIG(release, debug|release) {
   DEFINES += NDEBUG
 }
 
+# C++14
 QMAKE_CXX = g++-5
 QMAKE_LINK = g++-5
 QMAKE_CC = gcc-5
