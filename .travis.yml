@@ -16,11 +16,18 @@ install:
   - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 90
 
 script: 
-  - ./build_test.sh
+  # Build test
+  - qmake travis_qmake_gcc_cpp14_boost_test_gcov_oclint_test.pro
+  - make
+  # Build 'real' program
+  - qmake travis_qmake_gcc_cpp14_boost_test_gcov_oclint.pro
+  - make
+  # Run tests
   - ./travis_qmake_gcc_cpp14_boost_test_gcov_oclint_test
+  # Get code coverage
   - ./get_code_cov.sh
   - codecov
-  - ./build.sh
+  # Call OCLint
   - ./do_oclint.sh
 
 after_success:
