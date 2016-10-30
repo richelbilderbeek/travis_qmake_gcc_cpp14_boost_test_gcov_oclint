@@ -1,2 +1,31 @@
 # travis_qmake_gcc_cpp14_boost_test_gcov_oclint
-Minimal project that uses qmake, GCC, C++14, Boost, Boost.Test, gcov, OCLint and is tested by Travis CI
+
+[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+![Whitespace](Whitespace.png)
+[![Codecov logo](Codecov.png)](https://www.codecov.io)
+
+[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov_oclint.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov_oclint)
+[![codecov.io](https://codecov.io/github/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov_oclint/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov_oclint?branch=master)
+
+This GitHub is part of [the Travis C++ Tutorial](https://github.com/richelbilderbeek/travis_cpp_tutorial).
+
+The goal of this project is to have a clean Travis CI build, with specs:
+ * Build system: `qmake`
+ * C++ compiler: `gcc`
+ * C++ version: `C++14`
+ * Libraries: `STL` and Boost, demonstrating Boost.Test
+ * Code coverage: yes
+ * Code linter: OCLint
+ * Source: multiple files
+
+More complex builds:
+ * Use Qt4: [travis_qmake_gcc_cpp14_boost_test_gcov_oclint_qt4](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov_oclint_qt4)
+ * Use Qt5: [travis_qmake_gcc_cpp14_boost_test_gcov_oclint_qt5](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov_oclint_qt5)
+
+Less complex builds:
+ * No OCLint: [travis_qmake_gcc_cpp14_boost_test_gcov](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_gcov)
+ * No gcov: [travis_qmake_gcc_cpp14_boost_test_oclint](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_test_oclint)
+ * No Boost.Test: [travis_qmake_gcc_cpp14_gcov_oclint](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_gcov_oclint)
+ * Use C++11: [travis_qmake_gcc_cpp11_boost_test_gcov_oclint](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint)
+ * Use C++98: [travis_qmake_gcc_cpp98_boost_test_gcov_oclint](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98_boost_test_gcov_oclint)
+
