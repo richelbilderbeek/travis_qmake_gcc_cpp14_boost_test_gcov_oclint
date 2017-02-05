@@ -13,7 +13,7 @@ before_install:
   # Codecov
   - sudo pip install codecov
   # OCLint
-  - ./install_oclint.sh
+  - ./install_oclint
 
 install: 
   # C++14
@@ -31,10 +31,10 @@ script:
   # Run tests
   - ./travis_qmake_gcc_cpp14_boost_test_gcov_oclint_test
   # Get code coverage
-  - ./get_code_cov.sh
+  - ./get_code_cov
   - codecov
   # Call OCLint
-  - ./do_oclint.sh
+  - ./do_oclint
 
 after_success:
   # Codecov
